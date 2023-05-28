@@ -1,0 +1,18 @@
+.image-container {
+  width: 350px;
+  height: 450px;
+  padding: 10px;
+  background: linear-gradient(-45deg, transparent, $primary, transparent);
+  border-radius: 40px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    transform: rotate(7deg);
+    transition: $transi;
+    object-fit: cover;
+    &:hover {
+      transform: rotate(0);
+    }
+  }
+}

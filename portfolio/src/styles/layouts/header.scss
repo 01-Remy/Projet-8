@@ -1,0 +1,22 @@
+.remy-header {
+  height: 100px;
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 50px;
+
+    gap: 20px;
+    a {
+      font-weight: 700;
+      position: relative;
+      &::before {
+        @include underline-before($white);
+      }
+      &:hover::before,
+      &.active::before {
+        width: 100%;
+      }
+    }
+  }
+}

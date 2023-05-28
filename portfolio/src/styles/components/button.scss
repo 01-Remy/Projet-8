@@ -1,0 +1,28 @@
+.btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: $transi;
+  &.btn-full {
+    background-color: $primary;
+    color: $secondary;
+    &:hover,
+    &:focus {
+      background-color: $white;
+    }
+  }
+  &.btn-empty {
+    color: $primary;
+    background-color: transparent;
+    @include border($primary);
+    &:hover,
+    &:focus {
+      border: transparent;
+      background-color: $white;
+      color: $secondary;
+    }
+  }
+}
