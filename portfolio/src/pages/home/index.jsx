@@ -1,4 +1,4 @@
-import Button from "../../components/bouton";
+import Button from "../../components/button";
 import ProfilePicture from "../../components/profilePicture";
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
             <span>Rémy</span>Balland
           </h1>
           <p>Développeur web</p>
-          <Button content={"Par ici !"} link={"/à-propos"} classname={"btn btn-full"} />
+          <Button content={"Par ici !"} link={"/à-propos"} classname={"btn btn-full"} isNav={true} />
         </div>
         <ProfilePicture />
       </div>

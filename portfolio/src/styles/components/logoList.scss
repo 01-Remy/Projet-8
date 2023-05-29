@@ -1,0 +1,32 @@
+.logo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    display: grid;
+    place-content: center;
+    flex-basis: 20%;
+    font-weight: 700;
+    padding-block: 10px;
+    > div {
+      display: grid;
+      place-content: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      @include border($primary);
+      transition: $transi;
+      &:hover {
+        scale: 1.4;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 70%;
+      }
+    }
+  }
+}

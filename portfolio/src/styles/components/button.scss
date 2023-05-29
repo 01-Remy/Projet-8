@@ -20,9 +20,20 @@
     @include border($primary);
     &:hover,
     &:focus {
-      border: transparent;
+      border-color: transparent;
       background-color: $white;
       color: $secondary;
+    }
+  }
+  &.btn-card {
+    height: auto;
+    width: max-content;
+    border: none;
+    color: $primary;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      transform: translateX(-25px);
     }
   }
 }
