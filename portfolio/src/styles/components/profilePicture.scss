@@ -14,5 +14,16 @@
     &:hover {
       transform: rotate(0);
     }
+    @media #{$sm-layout} {
+      transform: none;
+    }
+  }
+  @media #{$xl-layout} {
+    width: 250px;
+    height: 350px;
+  }
+  @media #{$md-layout} {
+    width: 200px;
+    height: 250px;
   }
 }

@@ -2,7 +2,9 @@ import ProfilePicture from "../../components/profilePicture";
 import Button from "../../components/button";
 import LogoList from "../../components/logoList";
 import personalInfo from "../../data/personal-info.json";
+import CV from "../../assets/CV-RémyBalland_2023.pdf";
 import * as logos from "../../assets/logos";
+import { MdDownload, MdMail } from "react-icons/md";
 
 const skills = [
   {
@@ -57,22 +59,35 @@ function About() {
               Nom: <span>{personalInfo["full-name"]}</span>
             </li>
             <li>
-              <adress>
+              <address>
                 Email:{" "}
                 <a href={"mailto:" + personalInfo.email} title="Écrivez moi !">
                   {personalInfo.email}
                 </a>
-              </adress>
+              </address>
             </li>
           </ul>
           <div className="btn-box">
-            <Button content={"Télécharger mon CV"} link={"#"} isNav={false} classname={"btn btn-empty"} />
-            <Button content={"Me contacter"} link={"/contact"} isNav={true} classname={"btn btn-full"} />
+            <Button
+              content={"Télécharger mon CV"}
+              icon={<MdDownload />}
+              link={CV}
+              classname={"btn btn-empty"}
+              download={"CV_Rémy"}
+            />
+            <a href={CV} download>
+              <button>
+                <span>Télécharger mon CV</span>
+                <MdDownload />
+                <span></span>
+              </button>
+            </a>
+            <Button content={"Me contacter"} icon={<MdMail />} link={"/contact"} classname={"btn btn-full"} />
           </div>
         </div>
       </section>
       <section className="skills">
-        <h2>Skills</h2>
+        <h2>Compétences</h2>
         <LogoList logoTable={skills} />
       </section>
     </main>

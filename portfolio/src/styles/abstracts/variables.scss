@@ -18,3 +18,10 @@ $body-font: "Mulish", sans-serif;
 // Transitions
 $transi: all 400ms ease;
 $underline-transi: width 0.3s ease-in-out;
+
+// Layouts
+$sm-layout: "(max-width: 576px)";
+$md-layout: "(max-width: 768px)";
+$lg-layout: "(max-width: 992px)";
+$xl-layout: "(max-width: 1200px)";
+$xxl-layout: "(max-width: 1400px)";

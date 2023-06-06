@@ -1,13 +1,11 @@
-import svgPath from "../../data/icon-path.json";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Socials() {
   return (
     <ul className="social-icons">
       <li>
         <a href="https://github.com/01-Remy" target="_blank" rel="noreferrer" title="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-            <path d={svgPath.github} />
-          </svg>
+          <FaGithub />
         </a>
       </li>
       <li>
@@ -17,9 +15,7 @@ function Socials() {
           rel="noreferrer"
           title="LinkedIn"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d={svgPath.linkedIn} />
-          </svg>
+          <FaLinkedinIn />
         </a>
       </li>
     </ul>

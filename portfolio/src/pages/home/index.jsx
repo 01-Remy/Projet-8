@@ -10,7 +10,7 @@ function Home() {
             <span>Rémy</span>Balland
           </h1>
           <p>Développeur web</p>
-          <Button content={"Par ici !"} link={"/à-propos"} classname={"btn btn-full"} isNav={true} />
+          <Button content={"Par ici !"} link={"/à-propos"} classname={"btn btn-full"} />
         </div>
         <ProfilePicture />
       </div>

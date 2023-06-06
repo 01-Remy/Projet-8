@@ -1,9 +1,12 @@
 .btn {
+  display: flex;
+  align-items: center;
   width: 200px;
   height: 70px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 32px;
   font-weight: 700;
+  gap: 10px;
   cursor: pointer;
   transition: $transi;
   &.btn-full {
@@ -25,15 +28,11 @@
       color: $secondary;
     }
   }
-  &.btn-card {
-    height: auto;
-    width: max-content;
-    border: none;
-    color: $primary;
-    background-color: transparent;
-    &:hover,
-    &:focus {
-      transform: translateX(-25px);
-    }
+  .btn-content {
+    width: 100%;
+  }
+  .btn-icon {
+    display: flex;
+    align-items: center;
   }
 }
