@@ -3,8 +3,7 @@ import { useState } from "react";
 import { MdClose, MdMenuOpen, MdHome, MdMail, MdPerson, MdWork } from "react-icons/md";
 
 function Header() {
-  const [menu_class, setMenuClass] = useState("side-menu");
-  const [menuBg_class, setMenuBgClass] = useState("menu-bg");
+  const [menu_class, setMenuClass] = useState("");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   const dataLinks = [
@@ -32,11 +31,9 @@ function Header() {
 
   const updateMenu = () => {
     if (!isMenuClicked) {
-      setMenuBgClass("menu-bg");
       setMenuClass("side-menu open");
     } else {
-      setMenuBgClass("");
-      setMenuClass("side-menu");
+      setMenuClass("");
     }
     document.getElementById("root").classList.toggle("block-scroll");
     document.body.classList.toggle("block-scroll");
@@ -45,7 +42,7 @@ function Header() {
   };
 
   const clickOutside = (event) => {
-    const menu = document.getElementById("side-menu");
+    const menu = document.getElementById("side-menu-inner");
     const menuDimensions = menu.getBoundingClientRect();
     console.log(event);
     if (
@@ -54,8 +51,7 @@ function Header() {
       event.clientY < menuDimensions.top ||
       event.clientY > menuDimensions.bottom
     ) {
-      setMenuClass("side-menu");
-      setMenuBgClass("");
+      setMenuClass("");
       setIsMenuClicked(false);
       document.getElementById("root").classList.remove("block-scroll");
       document.body.classList.remove("block-scroll");
@@ -72,8 +68,8 @@ function Header() {
           <MdClose className="burger-menu" onClick={updateMenu} />
         )}
       </nav>
-      <div className={menuBg_class} onClick={clickOutside}>
-        <div className={menu_class} id="side-menu">
+      <div className={menu_class} onClick={clickOutside}>
+        <div id="side-menu-inner">
           <NavMenuLinks dataLinks={dataLinks} />
         </div>
       </div>
