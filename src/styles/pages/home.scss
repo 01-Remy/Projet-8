@@ -1,0 +1,55 @@
+.remy-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-block: 100px;
+    @media #{$sm-layout} {
+      flex-direction: column-reverse;
+      padding-block: 30px;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-block: 40px;
+      h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 68px;
+        font-weight: 800;
+        margin: 0;
+        @media #{$md-layout} {
+          font-size: 42px;
+        }
+      }
+      p {
+        font-size: 28px;
+        color: $primary;
+        @media #{$md-layout} {
+          font-size: 18px;
+        }
+      }
+      a {
+        margin-top: auto;
+        .btn {
+          @media #{$md-layout} {
+            font-size: 18px;
+            width: 120px;
+            height: 40px;
+          }
+          @media #{$sm-layout} {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .profile-picture {
+      @media #{$sm-layout} {
+        align-self: center;
+      }
+    }
+  }
+}

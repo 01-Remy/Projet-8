@@ -1,0 +1,14 @@
+@mixin underline-before($color) {
+  background-color: $color;
+  bottom: -5px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: $underline-transi;
+  width: 0;
+}
+
+@mixin border($color) {
+  border: 1px solid $color;
+}

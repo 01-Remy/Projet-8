@@ -1,0 +1,49 @@
+.logo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    display: grid;
+    place-content: center;
+    flex-basis: 20%;
+    font-weight: 700;
+    padding-block: 10px;
+    @media #{$sm-layout} {
+      flex-basis: 30%;
+    }
+    > div {
+      display: grid;
+      place-content: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      @include border($primary);
+      transition: $transi;
+      @media #{$md-layout} {
+        width: 80px;
+        height: 80px;
+      }
+      @media #{$sm-layout} {
+        width: 60px;
+        height: 60px;
+      }
+      &:hover {
+        scale: 1.4;
+        @media #{$sm-layout} {
+          scale: unset;
+        }
+      }
+      a {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 70%;
+        @media #{$sm-layout} {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

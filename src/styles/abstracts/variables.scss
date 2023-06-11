@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&family=Mulish:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap");
+
+// Colors
+$primary: #4db5ff;
+
+$secondary: #1f1f38;
+$secondary-light: #2c2c6c;
+
+$gray: #a5a5af;
+$gray-15: rgba(165, 165, 175, 0.15);
+
+$white: #fff;
+
+// Fonts
+$heading-font: "Montserrat", sans-serif;
+$body-font: "Mulish", sans-serif;
+
+// Transitions
+$transi: all 400ms ease;
+$underline-transi: width 0.3s ease-in-out;
+
+// Layouts
+$sm-layout: "(max-width: 576px)";
+$md-layout: "(max-width: 768px)";
+$lg-layout: "(max-width: 992px)";
+$xl-layout: "(max-width: 1200px)";
+$xxl-layout: "(max-width: 1400px)";

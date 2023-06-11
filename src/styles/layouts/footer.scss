@@ -1,0 +1,34 @@
+.remy-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
+  font-family: $heading-font;
+  color: $gray;
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  @media #{$md-layout} {
+    font-size: 11px;
+  }
+  span {
+    font-weight: 700;
+  }
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    li {
+      font-size: 20px;
+    }
+    svg {
+      fill: $primary;
+      transition: $transi;
+      &:hover,
+      &:focus {
+        fill: $white;
+      }
+    }
+  }
+}

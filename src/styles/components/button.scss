@@ -1,0 +1,38 @@
+.btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  gap: 10px;
+  cursor: pointer;
+  transition: $transi;
+  &.btn-full {
+    background-color: $primary;
+    color: $secondary;
+    &:hover,
+    &:focus {
+      background-color: $white;
+    }
+  }
+  &.btn-empty {
+    color: $primary;
+    background-color: transparent;
+    @include border($primary);
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      background-color: $white;
+      color: $secondary;
+    }
+  }
+  .btn-content {
+    width: 100%;
+  }
+  .btn-icon {
+    display: flex;
+    align-items: center;
+  }
+}

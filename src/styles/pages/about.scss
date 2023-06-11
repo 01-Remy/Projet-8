@@ -1,0 +1,83 @@
+.remy-about {
+  section {
+    justify-content: space-between;
+    .profile-picture {
+      @media #{$lg-layout} {
+        display: none;
+      }
+      @media #{$xxl-layout} {
+        width: 250px;
+        height: 350px;
+      }
+      img {
+        transform: rotate(-10deg);
+        &:hover {
+          transform: rotate(0);
+        }
+      }
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding-block: 20px;
+      @media #{$lg-layout} {
+        width: 100%;
+      }
+      @media #{$sm-layout} {
+        font-size: 14px;
+      }
+      h2 {
+        margin-top: 0;
+        color: $primary;
+        font-weight: 700;
+      }
+      .info-list {
+        @media #{$lg-layout} {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+        li {
+          font-weight: 700;
+          address > a,
+          span {
+            color: $primary;
+            font-weight: 400;
+          }
+        }
+      }
+      .btn-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: auto;
+        padding-top: 20px;
+        .btn {
+          width: max-content;
+          padding-inline: 20px;
+          font-size: 24px;
+          height: 60px;
+          @media #{$xl-layout} {
+            font-size: 20px;
+          }
+          @media #{$sm-layout} {
+            height: 50px;
+            width: 50px;
+            justify-content: center;
+            font-size: 24px;
+          }
+          .btn-content {
+            @media #{$sm-layout} {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &.skills {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
