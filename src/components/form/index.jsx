@@ -1,56 +1,46 @@
 import { React, useState } from "react";
 
 function Form({ classname, id }) {
-  const [name, setName] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [inputs, setInputs] = useState({});
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(inputs);
+  };
 
   return (
-    <form className={classname} id={id}>
+    <form className={classname} id={id} onSubmit={handleSubmit}>
       <label htmlFor="name">
         Nom
-        <input type="text" name="name" value={name} placeholder="Nom" onChange={(e) => setName(e.target.value)}></input>
+        <input type="text" name="name" value={inputs.name} placeholder="Nom" onChange={handleChange}></input>
       </label>
       <label htmlFor="firstName">
         Prénom
         <input
           type="text"
           name="firstName"
-          value={firstName}
+          value={inputs.firstName}
           placeholder="Prénom"
-          onChange={(e) => setFirstName(e.target.value)}
+          onChange={handleChange}
         ></input>
       </label>
       <label htmlFor="email">
         Email
-        <input
-          type="email"
-          name="email"
-          value={email}
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-        ></input>
+        <input type="email" name="email" value={inputs.email} placeholder="Email" onChange={handleChange}></input>
       </label>
       <label htmlFor="subject">
         Sujet
-        <input
-          type="text"
-          name="subject"
-          value={subject}
-          placeholder="Sujet"
-          onChange={(e) => setSubject(e.target.value)}
-        ></input>
+        <input type="text" name="subject" value={inputs.subject} placeholder="Sujet" onChange={handleChange}></input>
       </label>
       <label htmlFor="message">
         Message
-        <textarea
-          name="message"
-          value={message}
-          placeholder="Votre message"
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
+        <textarea name="message" value={inputs.message} placeholder="Votre message" onChange={handleChange}></textarea>
       </label>
       <button className="btn btn-full" type="submit" form="contact-form">
         <span className="btn-content">Envoyer</span>
