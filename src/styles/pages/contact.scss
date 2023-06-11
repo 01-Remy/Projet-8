@@ -1,28 +1,13 @@
 .remy-contact {
-  section {
+  section.contact {
     flex-direction: column;
     .contact-form {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      gap: 30px;
-      margin-bottom: 30px;
-      label {
-        color: $primary;
-        display: flex;
-        flex-direction: column;
-        input,
-        textarea {
-          height: 40px;
-          border: 1px solid $primary;
-          background-color: transparent;
-          border-radius: 5px;
-          color: $white;
-          padding: 5px 10px;
-        }
-        textarea {
-          height: 150px;
-        }
+      width: 70%;
+      @media #{$lg-layout} {
+        width: 80%;
+      }
+      @media #{$md-layout} {
+        width: 100%;
       }
     }
     .btn {

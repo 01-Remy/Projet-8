@@ -1,0 +1,51 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media #{$sm-layout} {
+    gap: 15px;
+  }
+  label {
+    color: $primary;
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea {
+      height: 40px;
+      border: 1px solid $primary;
+      background-color: transparent;
+      border-radius: 5px;
+      color: $white;
+      padding: 5px 10px;
+      @media #{$sm-layout} {
+        height: 40px;
+      }
+    }
+    textarea {
+      height: 150px;
+      @media #{$sm-layout} {
+        height: 100px;
+      }
+    }
+  }
+  .name-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media #{$sm-layout} {
+      gap: 15px;
+    }
+    label {
+      width: calc(50% - 15px);
+      @media #{$sm-layout} {
+        width: 100%;
+      }
+    }
+  }
+  button {
+    margin-top: 30px;
+    @media #{$sm-layout} {
+      margin-top: 15px;
+    }
+  }
+}
