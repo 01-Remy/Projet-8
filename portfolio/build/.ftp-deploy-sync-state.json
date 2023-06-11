@@ -1,0 +1,173 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1686477170795,
+    "data": [
+        {
+            "type": "file",
+            "name": "asset-manifest.json",
+            "size": 1609,
+            "hash": "1c34d9f4444abb62c593a0c86f2ff4deb2042a7626bc1b24dcbbf5e1fb32ae6a"
+        },
+        {
+            "type": "file",
+            "name": "favicon.ico",
+            "size": 3870,
+            "hash": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 648,
+            "hash": "f898c995a544fb18ee75743d5c044b48c291299b06727a82deae9caf76a653ca"
+        },
+        {
+            "type": "file",
+            "name": "logo192.png",
+            "size": 5347,
+            "hash": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00"
+        },
+        {
+            "type": "file",
+            "name": "logo512.png",
+            "size": 9664,
+            "hash": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461"
+        },
+        {
+            "type": "file",
+            "name": "manifest.json",
+            "size": 492,
+            "hash": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14"
+        },
+        {
+            "type": "file",
+            "name": "robots.txt",
+            "size": 67,
+            "hash": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2"
+        },
+        {
+            "type": "folder",
+            "name": "static"
+        },
+        {
+            "type": "folder",
+            "name": "static/css"
+        },
+        {
+            "type": "folder",
+            "name": "static/js"
+        },
+        {
+            "type": "folder",
+            "name": "static/media"
+        },
+        {
+            "type": "file",
+            "name": "static/css/main.de56b63c.css",
+            "size": 14386,
+            "hash": "f3de126c2f0fcbf750f62c26d00f3f72aa96f4b58b625d44a03905c397eb2e6a"
+        },
+        {
+            "type": "file",
+            "name": "static/css/main.de56b63c.css.map",
+            "size": 25835,
+            "hash": "aa721b66cc5c2d12a339e7269723d93f4d7c53a3a7d45c0cc9d885d71096ecc6"
+        },
+        {
+            "type": "file",
+            "name": "static/js/main.6c14229a.js",
+            "size": 184380,
+            "hash": "73d223cb858607c7de57faaf9f17ab13cc662fccb3e91550dae842fec2766d71"
+        },
+        {
+            "type": "file",
+            "name": "static/js/main.6c14229a.js.LICENSE.txt",
+            "size": 1651,
+            "hash": "78202bae569746d85761815b1bfbd1b79c3bb4068bb89d64f97daf0fc127f1f9"
+        },
+        {
+            "type": "file",
+            "name": "static/js/main.6c14229a.js.map",
+            "size": 4433601,
+            "hash": "91a41362c4995e6a3d5a20c65261f130c0cc8989ea50c281f3181cd6b2ea55e7"
+        },
+        {
+            "type": "file",
+            "name": "static/media/Booki.88fc3bb403d868d8653c.png",
+            "size": 438225,
+            "hash": "4fee2a39bccb94c5779d404149f807ed81c0bcb8ae1017c2b7266ee1dbff5ead"
+        },
+        {
+            "type": "file",
+            "name": "static/media/Booki_mobile.1f1c2b31d85300790cb0.png",
+            "size": 135489,
+            "hash": "8d8d71e41ea34a2a50e021feb4f50a813fd950f6dbb5256a85a8befb3e8c2592"
+        },
+        {
+            "type": "file",
+            "name": "static/media/CV-RémyBalland_2023.a275f8cf42c0bd9a7886.pdf",
+            "size": 1126798,
+            "hash": "ba2ccd112c985a99a65f172f53c8695eee09b6111bab380bb886480463475c70"
+        },
+        {
+            "type": "file",
+            "name": "static/media/PP_Rémy.55a5317a3137804de483.jpg",
+            "size": 219492,
+            "hash": "78adc1b8c799bbfd2a90c61517a95515eef126c37ea57e41a84b9e09055c759b"
+        },
+        {
+            "type": "file",
+            "name": "static/media/bootstrap.ea0698473eab9c8a5e1df80d010615e1.svg",
+            "size": 2230,
+            "hash": "ec999f979aec77f419255cf71b2139c9e8b0a945d855bd3ee725bf24ad67d555"
+        },
+        {
+            "type": "file",
+            "name": "static/media/css3.f9dd8c41f36a09b229daccb64af6fff4.svg",
+            "size": 1340,
+            "hash": "4a60dbad52f7b27c4e6ee773f85d0867e6d086c452d5c05eff59070a06fb20a1"
+        },
+        {
+            "type": "file",
+            "name": "static/media/figma.7768d8d889020102f48ad34f99a400ef.svg",
+            "size": 612,
+            "hash": "e41219852afb084ddc2199edaa84909e12d1636e05465211f9debce13f24e780"
+        },
+        {
+            "type": "file",
+            "name": "static/media/git.74ad412378a55d61a7cec8f8ffb7fdc0.svg",
+            "size": 805,
+            "hash": "228c548e66f7ef0a654fdb4b8a88786c7b45c07a367d58406aa50663ab617a9f"
+        },
+        {
+            "type": "file",
+            "name": "static/media/html5_white.a179051807e25bbd2549996e040566dc.svg",
+            "size": 1446,
+            "hash": "fa9a2841cb16a82c910c3b37f047d4eb50e5295508d89540a72d951b82be7279"
+        },
+        {
+            "type": "file",
+            "name": "static/media/javascript.1b33f96e160a71a1061fe9e60a8adeab.svg",
+            "size": 665,
+            "hash": "130ff76e9f39205ee772dde7420aeafd6cba64002c5a5ab727c1526e926e2a28"
+        },
+        {
+            "type": "file",
+            "name": "static/media/nodejs_green.fbd6156e2bf49f8117ebce99fb948476.svg",
+            "size": 1557,
+            "hash": "faf7fc6ddc63ce70ba2241418aa39a6a9ebd919ac049a9b2b2a3a56dc836d2e9"
+        },
+        {
+            "type": "file",
+            "name": "static/media/react-original.ab59409c7575577b0f7585a672625864.svg",
+            "size": 2414,
+            "hash": "9db845f5226c37df125c66a3047f54e492bcf73732b6df307d909538daabe6cc"
+        },
+        {
+            "type": "file",
+            "name": "static/media/tailwindcss.6aa56e23a8feed37002b25f430c79dc1.svg",
+            "size": 715,
+            "hash": "041da115a6e71d031bed830ec04fee1775f951358e757765d8bea7e2c01ebae5"
+        }
+    ]
+}

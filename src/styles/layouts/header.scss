@@ -50,11 +50,8 @@
       }
     }
   }
-  .menu-bg {
-    position: absolute;
-    inset: 0;
-  }
-  .side-menu {
+
+  #side-menu-inner {
     display: none;
     width: 200px;
     height: 100vh;
@@ -91,8 +88,14 @@
       display: flex;
       flex-direction: column;
     }
+  }
+  .side-menu {
+    position: absolute;
+    inset: 0;
     &.open {
-      transform: translateX(0);
+      #side-menu-inner {
+        transform: translateX(0);
+      }
     }
   }
 }
