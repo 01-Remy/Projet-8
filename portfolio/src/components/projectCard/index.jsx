@@ -17,24 +17,31 @@ function ProjectCard({ projectData }) {
 
   const updateModal = () => {
     const modal = document.getElementById(modalId);
-    modal.addEventListener("click", (e) => {
-      const modalDimensions = modal.getBoundingClientRect();
-      if (
-        e.clientX < modalDimensions.left ||
-        e.clientX > modalDimensions.right ||
-        e.clientY < modalDimensions.top ||
-        e.clientY > modalDimensions.bottom
-      ) {
-        modal.close();
-        setIsCardClicked(false);
-      }
-    });
     if (!isCardClicked) {
       modal.showModal();
     } else {
       modal.close();
     }
+    document.getElementById("root").classList.toggle("block-scroll");
+    document.body.classList.toggle("block-scroll");
     setIsCardClicked(!isCardClicked);
+  };
+
+  const clickOutside = (event) => {
+    const modal = document.getElementById(modalId);
+    const modalDimensions = modal.getBoundingClientRect();
+    console.log(event.target);
+    if (
+      event.clientX < modalDimensions.left ||
+      event.clientX > modalDimensions.right ||
+      event.clientY < modalDimensions.top ||
+      event.clientY > modalDimensions.bottom
+    ) {
+      modal.close();
+      setIsCardClicked(false);
+      document.getElementById("root").classList.remove("block-scroll");
+      document.body.classList.remove("block-scroll");
+    }
   };
 
   return (
@@ -49,7 +56,7 @@ function ProjectCard({ projectData }) {
         </div>
         <div className="darken-background"></div>
       </div>
-      <dialog className="project-modal" id={modalId}>
+      <dialog className="project-modal" id={modalId} onClick={clickOutside}>
         <button className="close-modal" onClick={updateModal}>
           <MdClose />
         </button>

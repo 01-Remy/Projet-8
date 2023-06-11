@@ -7,15 +7,16 @@ body {
   letter-spacing: 0.5px;
   box-sizing: border-box;
   word-break: break-word;
-  overflow-x: hidden;
   #root {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
-  &.block-scroll {
-    overflow-y: hidden;
-  }
+}
+.block-scroll {
+  overflow: hidden;
 }
 
 h1,

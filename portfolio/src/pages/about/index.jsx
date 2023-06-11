@@ -60,7 +60,7 @@ function About() {
             </li>
             <li>
               <address>
-                Email:{" "}
+                Email:
                 <a href={"mailto:" + personalInfo.email} title="Écrivez moi !">
                   {personalInfo.email}
                 </a>
@@ -69,20 +69,19 @@ function About() {
           </ul>
           <div className="btn-box">
             <Button
-              content={"Télécharger mon CV"}
+              content="Télécharger mon CV"
               icon={<MdDownload />}
               link={CV}
               classname={"btn btn-empty"}
-              download={"CV_Rémy"}
+              download={"CV-RémyBalland"}
             />
-            <a href={CV} download>
-              <button>
-                <span>Télécharger mon CV</span>
-                <MdDownload />
-                <span></span>
-              </button>
-            </a>
-            <Button content={"Me contacter"} icon={<MdMail />} link={"/contact"} classname={"btn btn-full"} />
+            <Button
+              content={"Me contacter"}
+              icon={<MdMail />}
+              link={"/contact"}
+              classname={"btn btn-full"}
+              isNav={true}
+            />
           </div>
         </div>
       </section>
