@@ -1,4 +1,5 @@
-import booki from "../projects/Booki.png";
-import bookiMobile from "../projects/Booki_mobile.png";
+import * as bookiImages from "./booki";
+import * as sophieImages from "./sophie_buel";
+import * as ninaImages from "./nina_seo";
 
-export { booki, bookiMobile };
+export { bookiImages, sophieImages, ninaImages };

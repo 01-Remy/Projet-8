@@ -9,8 +9,8 @@
     .project-card {
       position: relative;
       height: 250px;
-      cursor: pointer;
       &:hover {
+        user-select: none;
         .btn-card {
           transform: translateX(-25px);
         }
@@ -95,6 +95,10 @@
     max-width: 1100px;
     background-color: $secondary;
     border: 1px solid $primary;
+    &[open] {
+      display: flex;
+      flex-direction: column;
+    }
     .modal-content {
       display: flex;
       flex-basis: 50%;
@@ -108,15 +112,13 @@
       > * {
         width: 45%;
         height: 400px;
-        @media #{$lg-layout} {
-          height: 300px;
-        }
         @media #{$md-layout} {
           width: 100%;
         }
       }
       .description {
         color: $gray;
+        height: max-content;
         h2 {
           color: $white;
         }
@@ -161,9 +163,9 @@
     }
     .close-modal {
       display: flex;
-      width: 100%;
+      width: max-content;
       align-items: center;
-      justify-content: flex-end;
+      align-self: flex-end;
       background-color: transparent;
       color: $white;
       font-size: 28px;

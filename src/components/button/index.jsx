@@ -10,17 +10,17 @@ function Button({ content, link, classname, icon, target, download, isNav }) {
   );
 
   let elem;
-  if (!isNav) {
-    elem = (
-      <a href={link} target={target ? target : null} download={download ? download : null}>
-        {button}
-      </a>
-    );
-  } else if (link) {
+  if (isNav) {
     elem = (
       <Link to={link} target={target ? target : null}>
         {button}
       </Link>
+    );
+  } else if (link) {
+    elem = (
+      <a href={link} target={target ? target : null} download={download ? download : null}>
+        {button}
+      </a>
     );
   } else {
     elem = button;

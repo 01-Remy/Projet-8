@@ -3,10 +3,14 @@
   .nav-link {
     font-weight: 700;
     position: relative;
+    &:focus {
+      outline: none;
+    }
     &::before {
       @include underline-before($white);
     }
     &:hover::before,
+    &:focus::before,
     &.active::before {
       width: 100%;
     }
@@ -20,11 +24,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     ul {
       display: flex;
       padding: 30px 50px;
       gap: 20px;
+      margin: 0;
+
       @media #{$lg-layout} {
         width: 100%;
         justify-content: space-evenly;
