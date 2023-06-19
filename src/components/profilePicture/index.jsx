@@ -1,4 +1,4 @@
-import remyPhoto from "../../assets/images/PP_Rémy.jpg";
+import remyPhoto from "../../assets/images/remyBalland.webp";
 
 function ProfilePicture() {
   return (
