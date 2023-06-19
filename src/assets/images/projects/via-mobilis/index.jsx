@@ -1,5 +1,5 @@
-import vmMain from "./vm-home.png";
-import vmMobile from "./vm-mobile.png";
-import vmContact from "./vm-contact.png";
+import vmMain from "./vm-home.webp";
+import vmMobile from "./vm-mobile.webp";
+import vmContact from "./vm-contact.webp";
 
 export { vmMain, vmMobile, vmContact };
