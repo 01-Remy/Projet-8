@@ -9,6 +9,9 @@
   gap: 10px;
   cursor: pointer;
   transition: $transi;
+  &:focus {
+    outline: none;
+  }
   &.btn-full {
     background-color: $primary;
     color: $secondary;
@@ -34,5 +37,17 @@
   .btn-icon {
     display: flex;
     align-items: center;
+  }
+}
+
+a:focus {
+  outline: none;
+  .btn-full {
+    background-color: $white;
+  }
+  .btn-empty {
+    border-color: transparent;
+    background-color: $white;
+    color: $secondary;
   }
 }

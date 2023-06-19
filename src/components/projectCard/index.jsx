@@ -46,12 +46,12 @@ function ProjectCard({ projectData }) {
 
   return (
     <>
-      <div className="project-card" style={backgroundImage} onClick={updateModal}>
+      <div className="project-card" style={backgroundImage}>
         <div className="card-title">
           <Tags names={projectData.tags} />
           <h2>{projectData.name}</h2>
         </div>
-        <div className={"btn btn-card"}>
+        <div className={"btn btn-card"} onClick={updateModal}>
           Voir plus <MdArrowForward />
         </div>
         <div className="darken-background"></div>
@@ -66,20 +66,24 @@ function ProjectCard({ projectData }) {
             <p>{projectData.description}</p>
             <Tags names={projectData.tags} />
             <div className="modal-btn">
-              <Button
-                link={projectData.github}
-                content="GitHub"
-                classname={"btn btn-full"}
-                target={"_blank"}
-                icon={<FaGithub />}
-              />
-              <Button
-                link={projectData.demo}
-                content="Démo"
-                classname={"btn btn-empty"}
-                target={"_blank"}
-                icon={<MdMonitor />}
-              />
+              {projectData.github ? (
+                <Button
+                  link={projectData.github}
+                  content="GitHub"
+                  classname={"btn btn-full"}
+                  target={"_blank"}
+                  icon={<FaGithub />}
+                />
+              ) : null}
+              {projectData.demo ? (
+                <Button
+                  link={projectData.demo}
+                  content="Démo"
+                  classname={"btn btn-empty"}
+                  target={"_blank"}
+                  icon={<MdMonitor />}
+                />
+              ) : null}
             </div>
           </div>
           {projectData.images.map((image, index) => (

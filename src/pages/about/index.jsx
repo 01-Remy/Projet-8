@@ -62,7 +62,7 @@ function About() {
               <address>
                 Email:
                 <a href={"mailto:" + personalInfo.email} title="Écrivez moi !">
-                  {personalInfo.email}
+                  {" " + personalInfo.email}
                 </a>
               </address>
             </li>
