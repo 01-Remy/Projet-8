@@ -44,13 +44,45 @@ const projects = [
   },
   {
     name: "Kasa",
-    tags: ["SASS", "React", "tech3"],
+    tags: ["SASS", "React"],
     images: [
-      { name: "image 1", url: "#" },
-      { name: "image 2", url: "#" },
-      { name: "image 3", url: "#" },
+      { name: "Page d'accueil du site Kasa", url: projectsImages.kasaImages.kasaMain },
+      { name: "Page de présentation d'une location sur le site Kasa", url: projectsImages.kasaImages.kasaAppart },
+      { name: "Version mobile de la page à propos du site Kasa", url: projectsImages.kasaImages.kasaMobile },
     ],
-    description: "Description ni trop longue ni trop courte, expliquant le projet.",
+    description: "Projet d'études | Intégration responsive front-end sous react d'un site de location immobilière.",
+    github: "https://github.com/01-Remy/Projet-6",
+    demo: "https://01-remy.github.io/Projet-6",
+  },
+  {
+    name: "VM-Extends",
+    tags: ["SASS", "JS", "PHP"],
+    images: [
+      { name: "Page d'accueil du site vm-extend", url: projectsImages.vmImages.vmMain },
+      {
+        name: "Formulaire de contact du site vm-extend",
+        url: projectsImages.vmImages.vmContact,
+      },
+      { name: "Version mobile du site vm-extend", url: projectsImages.vmImages.vmMobile },
+    ],
+    description:
+      "Intégration du site vm-extend.fr pour Via Mobilis à l'aide d'un template afin de présenter leurs services. Projet sous architecture MVC en PHP.",
+    demo: "https://www.vm-extend.fr/",
+  },
+  {
+    name: "Mon vieux Grimoire",
+    tags: ["NodeJs", "Express", "MongoDB"],
+    images: [
+      { name: "Page d'accueil du site Mon Vieux Grimoire", url: projectsImages.mvgImages.mvgHome },
+      {
+        name: "Page d'information d'un livre du site Mon Vieux Grimoire",
+        url: projectsImages.mvgImages.mvgInfo,
+      },
+      { name: "Formulaire d'ajout de livre du site Mon Vieux Grimoire", url: projectsImages.mvgImages.mvgForm },
+    ],
+    description:
+      "Projet d'études | Développement du back-end sous NodeJs d'un site de notation de livres. Gère la connexion, l'ajout, la modification et la suppression d'un livre.",
+    github: "https://github.com/01-Remy/Projet-7",
   },
 ];
 

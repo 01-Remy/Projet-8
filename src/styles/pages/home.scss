@@ -26,8 +26,9 @@
           font-size: 42px;
         }
       }
-      p {
+      .job-list {
         font-size: 28px;
+        margin-block: 1em;
         color: $primary;
         @media #{$md-layout} {
           font-size: 18px;

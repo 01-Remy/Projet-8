@@ -66,13 +66,15 @@ function ProjectCard({ projectData }) {
             <p>{projectData.description}</p>
             <Tags names={projectData.tags} />
             <div className="modal-btn">
-              <Button
-                link={projectData.github}
-                content="GitHub"
-                classname={"btn btn-full"}
-                target={"_blank"}
-                icon={<FaGithub />}
-              />
+              {projectData.github ? (
+                <Button
+                  link={projectData.github}
+                  content="GitHub"
+                  classname={"btn btn-full"}
+                  target={"_blank"}
+                  icon={<FaGithub />}
+                />
+              ) : null}
               {projectData.demo ? (
                 <Button
                   link={projectData.demo}

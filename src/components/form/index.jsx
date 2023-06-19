@@ -16,7 +16,7 @@ function Form({ classname, id }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!inputs.name || !inputs.firstName || !inputs.email || !inputs.subject || !inputs.message) {
+    if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message) {
       setMessage("Merci de renseigner tous les champs obligatoires* !");
     } else if (!validator.isEmail(inputs.email)) {
       setMessage("Veuillez renseigner une adresse email valide !");
