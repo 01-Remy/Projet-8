@@ -5,9 +5,7 @@ function LogoList({ logoTable }) {
       {logoTable.map((logo, index) => (
         <li key={index}>
           <div>
-            <a href={logo.link} title={logo.name}>
-              <img src={logo.src} alt={logo.name}></img>
-            </a>
+            <img src={logo.src} alt={logo.name} title={logo.name}></img>
           </div>
         </li>
       ))}
