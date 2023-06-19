@@ -13,8 +13,9 @@
       flex-basis: 30%;
     }
     > div {
-      display: grid;
-      place-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -34,14 +35,12 @@
           scale: unset;
         }
       }
-      a {
-        display: flex;
-        justify-content: center;
-      }
       img {
         width: 70%;
+        height: 70%;
         @media #{$md-layout} {
           width: 60%;
+          height: 60%;
         }
       }
     }
