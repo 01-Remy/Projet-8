@@ -52,7 +52,7 @@ const projects = [
     ],
     description: "Projet d'études | Intégration responsive front-end sous react d'un site de location immobilière.",
     github: "https://github.com/01-Remy/Projet-6",
-    demo: "https://01-remy.github.io/Projet-6",
+    demo: "https://projet-6.remy-balland.fr/",
   },
   {
     name: "VM-Extends",
