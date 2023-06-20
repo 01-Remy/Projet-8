@@ -39,13 +39,21 @@ function Form({ classname, id }) {
       <div className="name-inputs">
         <label htmlFor="name">
           Nom*
-          <input type="text" name="name" value={inputs.name || ""} placeholder="Nom" onChange={handleChange}></input>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value={inputs.name || ""}
+            placeholder="Nom"
+            onChange={handleChange}
+          ></input>
         </label>
         <label htmlFor="firstName">
           Prénom
           <input
             type="text"
             name="firstName"
+            id="firstName"
             value={inputs.firstName || ""}
             placeholder="Prénom"
             onChange={handleChange}
@@ -54,13 +62,21 @@ function Form({ classname, id }) {
       </div>
       <label htmlFor="email">
         Email*
-        <input type="email" name="email" value={inputs.email || ""} placeholder="Email" onChange={handleChange}></input>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value={inputs.email || ""}
+          placeholder="Email"
+          onChange={handleChange}
+        ></input>
       </label>
       <label htmlFor="subject">
         Sujet*
         <input
           type="text"
           name="subject"
+          id="subject"
           value={inputs.subject || ""}
           placeholder="Sujet"
           onChange={handleChange}
@@ -70,6 +86,7 @@ function Form({ classname, id }) {
         Message*
         <textarea
           name="message"
+          id="message"
           value={inputs.message || ""}
           placeholder="Votre message"
           onChange={handleChange}
@@ -77,7 +94,7 @@ function Form({ classname, id }) {
       </label>
       <div className="submit-container">
         <label htmlFor="submit" className="btn btn-full" id="submit">
-          <input type="submit" name="submit" value={"Envoyer"}></input>
+          <input type="submit" name="submit" id="submit" value={"Envoyer"}></input>
           <MdSend />
         </label>
         <span className="submit-message">{message}</span>
