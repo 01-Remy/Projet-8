@@ -26,7 +26,7 @@ const projects = [
       },
     ],
     description:
-      "Projet d'études | Modification dynamique du site avec JS. Récupération des travaux depuis l'API, ajout d'un filtre sur la gallerie, d'une page de connexion et d'une modale d'administration",
+      "Projet d'études | Modification dynamique du site avec JS. Récupération des travaux depuis l'API, ajout d'un filtre sur la galerie, d'une page de connexion et d'une modale d'administration",
     github: "https://github.com/01-Remy/Projet-3",
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     images: [
       { name: "Gallerie du site Nina Carducci", url: projectsImages.ninaImages.ninaMain },
       { name: "Page d'accueil mobile du site Nina Carducci", url: projectsImages.ninaImages.ninaMobile },
-      { name: "Gallerie du site Nina Carducci avec la modale ouverte", url: projectsImages.ninaImages.ninaModale },
+      { name: "Galerie du site Nina Carducci avec la modale ouverte", url: projectsImages.ninaImages.ninaModale },
     ],
     description:
       "Projet d'études | Debug Javascript et optimisation SEO du site (lighthouse, WAVE, Rich Snippet et Schema.org).",

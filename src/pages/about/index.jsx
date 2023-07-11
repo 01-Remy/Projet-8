@@ -2,7 +2,7 @@ import ProfilePicture from "../../components/profilePicture";
 import Button from "../../components/button";
 import LogoList from "../../components/logoList";
 import personalInfo from "../../data/personal-info.json";
-import CV from "../../assets/CV-RémyBalland2023.pdf";
+import CV from "../../assets/CV_RémyBalland.pdf";
 import * as logos from "../../assets/logos";
 import { MdDownload, MdMail } from "react-icons/md";
 

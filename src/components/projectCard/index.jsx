@@ -30,7 +30,6 @@ function ProjectCard({ projectData }) {
   const clickOutside = (event) => {
     const modal = document.getElementById(modalId);
     const modalDimensions = modal.getBoundingClientRect();
-    console.log(event.target);
     if (
       event.clientX < modalDimensions.left ||
       event.clientX > modalDimensions.right ||
