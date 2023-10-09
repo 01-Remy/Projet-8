@@ -7,7 +7,7 @@ FTP_PASSWORD="$3"
 REMOTE_DIR="/public_html"
 
 # Chemin local du répertoire de construction
-LOCAL_DIR="./build/"
+LOCAL_DIR="./"
 
 # Utilisation de l'outil "lftp" pour le déploiement
 lftp -c "set ftp:list-options -a;
