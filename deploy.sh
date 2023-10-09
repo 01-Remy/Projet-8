@@ -6,7 +6,7 @@ FTP_USERNAME="$2"
 FTP_PASSWORD="$3"
 REMOTE_DIR="/public_html"
 
-# Chemin local du répertoire de construction
+# Chemin local du répertoire de constructionnn
 LOCAL_DIR="./"
 
 # Utilisation de l'outil "lftp" pour le déploiement
