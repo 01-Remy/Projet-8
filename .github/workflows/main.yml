@@ -23,6 +23,11 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install lftp -y
+
       - name: Change permissions for deploy.sh
         run: chmod +x ./deploy.sh # Accorde les permissions d'exécution
 
