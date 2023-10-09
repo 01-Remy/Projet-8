@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Variables FTP
-FTP_SERVER="${{ secrets.FTP_SERVER }}"
-FTP_USERNAME="${{ secrets.FTP_USERNAME }}"
-FTP_PASSWORD="${{ secrets.FTP_PASSWORD }}"
+FTP_SERVER="$1"
+FTP_USERNAME="$2"
+FTP_PASSWORD="$3"
 REMOTE_DIR="/public_html"
 
 # Chemin local du répertoire de construction

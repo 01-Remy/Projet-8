@@ -27,4 +27,5 @@ jobs:
         run: chmod +x ./deploy.sh # Accorde les permissions d'exécution
 
       - name: FTP Deploy
-        run: ./deploy.sh
+        run: |
+          ./deploy.sh ${{ secrets.FTP_SERVER }} ${{ secrets.FTP_USERNAME }} ${{ secrets.FTP_PASSWORD }}
