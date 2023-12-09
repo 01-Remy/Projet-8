@@ -155,10 +155,6 @@
         &:before {
           color: $white;
         }
-        &:hover {
-          object-fit: contain;
-          background-color: $secondary-light;
-        }
       }
     }
     .close-modal {
